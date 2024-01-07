@@ -1,0 +1,12 @@
+#!/run/media/dan/f583d92b-1585-4d8d-9a5a-675cc0ef780e/dan/vx7/vxworks_2309/vxworks/23.09/host/x86_64-linux/bin/python3.9
+# EASY-INSTALL-ENTRY-SCRIPT: 'numpy==1.21.0','console_scripts','f2py3.9'
+__requires__ = 'numpy==1.21.0'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('numpy==1.21.0', 'console_scripts', 'f2py3.9')()
+    )
